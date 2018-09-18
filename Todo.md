@@ -1,6 +1,10 @@
 # Schema changes
 
-- [ ] Rich text for description
-- [ ] Add author
-- [ ] Remove hours of operation
+- [x] Rich text for description
+- [x] Add author
+- [x] Remove hours of operation
 - [ ] How to get coordinates
+
+## Get Coordinates
+
+Lat

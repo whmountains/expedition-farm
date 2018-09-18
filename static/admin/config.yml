@@ -52,31 +52,31 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Coordinates", name: "coordinates", widget: "text"}
-      - label: "Hours of Operation"
-        name: "hours"
-        widget: "list"
-        fields:
-          - {label: "Day Range", name: "day_range", widget: "string"}
-          - label: "Time Range"
-            name: "time_ranges"
-            widget: "list"
-            field:
-              - {label: "Time Range", name: "time_range", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Coordinates", name: "coordinates", widget: "string", placeholder: "latitude,longitude"}
+      # - label: "Hours of Operation"
+      #   name: "hours"
+      #   widget: "list"
+      #   fields:
+      #     - {label: "Day Range", name: "day_range", widget: "string"}
+      #     - label: "Time Range"
+      #       name: "time_ranges"
+      #       widget: "list"
+      #       field:
+      #         - {label: "Time Range", name: "time_range", widget: "string"}
       - label: "Images"
         name: "images"
         widget: "list"
         fields:
-          - label: "Images"
+          - label: "Image"
             name: "image"
             widget: "image"
-      - label: "Categories"
-        name: "categories"
-        widget: "list"
-        fields:
-          - label: "Category"
-            name: "category"
-            widget: "select"
-            options: ["Food", "Outdoors", "Together", "Study", "Events", "Destination"]
+          - label: "Caption"
+            name: "caption"
+            widget: "string"
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Food", "Outdoors", "Together", "Study", "Events", "Destination"]
