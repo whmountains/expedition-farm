@@ -55,7 +55,7 @@ collections:
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Coordinates", name: "coordinates", widget: "string", placeholder: "latitude,longitude"}
+      - {label: "Coordinates (latitude,longitude)", name: "coordinates", widget: "string"}
       # - label: "Hours of Operation"
       #   name: "hours"
       #   widget: "list"

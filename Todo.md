@@ -7,4 +7,5 @@
 
 ## Get Coordinates
 
-Lat
+Latitude field
+longitude field
