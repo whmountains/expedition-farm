@@ -43,3 +43,40 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+  - name: "destinations"
+    label: "Destinations"
+    folder: "src/data/destinations"
+    create: true
+    extention: "toml"
+    format: "toml"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Coordinates", name: "coordinates", widget: "text"}
+      - label: "Hours of Operation"
+        name: "hours"
+        widget: "list"
+        field:
+          - {label: "Day Range", name: "day_range", widget: "string"}
+          - label: "Time Range"
+            name: "time_ranges"
+            widget: "list"
+            field:
+              - {label: "Time Range", name: "time_range", widget: "string"}
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        field:
+          - label: "Images"
+            name: "image"
+            widget: "image"
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        field:
+          - label: "Category"
+            name: "category"
+            widget: "select"
+            options: ["Food", "Outdoors", "Together", "Study", "Events", "Destination"]
